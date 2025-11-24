@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Central High Primary School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap fa-lg text-primary"></i>
+                <span>Central High</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="curriculum.html">Curriculum</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news-events.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-accent text-white" href="admissions.html">Admissions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white py-5 text-center">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p class="lead">Capturing moments of joy, learning, and achievement.</p>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="section-padding">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="text-center mb-5">
+                <button class="btn btn-outline-primary gallery-btn active" data-filter="all">All</button>
+                <button class="btn btn-outline-primary gallery-btn" data-filter="sports">Sports Day</button>
+                <button class="btn btn-outline-primary gallery-btn" data-filter="graduation">Graduation</button>
+                <button class="btn btn-outline-primary gallery-btn" data-filter="cultural">Cultural Day</button>
+                <button class="btn btn-outline-primary gallery-btn" data-filter="trips">Trips</button>
+                <button class="btn btn-outline-primary gallery-btn" data-filter="classroom">Classroom</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="row" id="gallery-grid">
+                <!-- Sports -->
+                <div class="col-md-4 gallery-item" data-category="sports">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1561912774-79769a0a0a7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded" alt="Sports">
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item" data-category="sports">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded" alt="Sports">
+                    </div>
+                </div>
+
+                <!-- Graduation -->
+                <div class="col-md-4 gallery-item" data-category="graduation">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded" alt="Graduation">
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item" data-category="graduation">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded" alt="Graduation">
+                    </div>
+                </div>
+
+                <!-- Cultural -->
+                <div class="col-md-4 gallery-item" data-category="cultural">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded" alt="Cultural">
+                    </div>
+                </div>
+
+                <!-- Trips -->
+                <div class="col-md-4 gallery-item" data-category="trips">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded" alt="Trip">
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item" data-category="trips">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1533222535027-b91c6627d176?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded" alt="Trip">
+                    </div>
+                </div>
+
+                <!-- Classroom -->
+                <div class="col-md-4 gallery-item" data-category="classroom">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded" alt="Classroom">
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item" data-category="classroom">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1577896337318-2838d1b16007?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top rounded" alt="Classroom">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Central High</h5>
+                    <p>Nurturing minds, building futures. Excellence in primary education since 1995.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="curriculum.html">Curriculum</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 School Lane, Education City</p>
+                    <p><i class="fas fa-phone me-2"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@centralhigh.edu</p>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Central High Primary School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Simple Gallery Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.gallery-btn');
+            const items = document.querySelectorAll('.gallery-item');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const filter = button.getAttribute('data-filter');
+
+                    items.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            // Add a small fade-in animation
+                            item.style.opacity = '0';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transition = 'opacity 0.5s';
+                            }, 10);
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
